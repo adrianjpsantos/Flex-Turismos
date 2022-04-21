@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: blue;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.flex-container {
+  display: flex;
+  max-width: 992px;
+  width: 100%;
+  margin: auto;
+}
+
+header .list-items {
+  display: flex;
+  max-width: 260px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.list-items li a {
+  color: #fff;
+}
+
+header .menu {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.apresentacao {
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.apresentacao .texto-apresentacao {
+  min-height: 200px;
+}
+
+.texto-apresentacao h1 {
+  color: blue;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.texto-apresentacao p{
+    padding: 2% 0;
+}
+
+.texto-apresentacao a {
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 30px;
+  padding: 10px 15px;
+  width: 150px;
+  line-height: 50px;
+  margin: 10px 0;
+}
+
+.texto-apresentacao img{
+    min-width: 35vw;
+}
+
+#quem-somos {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#quem-somos h2 {
+  font-size: 32px;
+  color: blue;
+  display: flex;
+}
+
+#quem-somos h2::before {
+  content: "";
+  height: 30px;
+  width: 5px;
+  margin-right: 5px;
+  background-color: blue;
+  position: relative;
+}
+
+#quem-somos p {
+  margin-bottom: 10px;
+  width: 90%;
+}
+#quem-somos img {
+  min-width: 35vw;
+}
+
+.container-externo {
+  background-color: blue;
+  height: 100%;
+}
+#servicos{
+    flex-direction: column;
+    padding: 100px 0;
+}
+
+#servicos h2{
+    color: #FFF;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#servicos .list-servicos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.list-servicos .item-servicos{
+    text-align: center;
+}
+
+.item-servicos a{
+    width: 120px;
+    background-color: #fff;
+    border-radius: 30px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 80px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: blue;
+    font-size: 14px;
+}
+
+
+.item-servicos p{
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.item-servicos img{
+    width: 200px;
+    margin: auto;
+}
+#planos{
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#planos .plano{
+    margin: 30px;
+    border: 3px solid blue;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+}
+
+.plano h3{
+    color: blue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid blue;
+    font-size: 20px;
+    text-align: center;
+}
+
+.plano ul {
+    list-style-type:square;
+    margin: 20px 0;
+}
+
+.plano ul li{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: blue;
+}
+
+.plano a{
+    margin: 20px 0;
+    background-color: blue;
+    border-radius: 30px;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    line-height: 20px;
+    text-align: center;
+}
+
+footer{
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding:0 5%;
+}
+
+/* mobile */
+@media (max-width: 992px) {
+
+    .flex-container{
+        flex-direction: column;
+    }
+
+    .apresentacao{
+        justify-content: center;
+        height: 70vh;
+        align-items: flex-start;
+        padding: 10% 5%;
+    }
+
+    .list-servicos{
+        flex-direction: column;
+    }
+
+    #quem-somos{
+        flex-direction: column-reverse;
+        padding: 0 5%;
+    }
+
+    #servicos{
+        flex-direction: column;
+        padding: 10% 5%;
+    }
+
+    .item-servicos{
+        padding: 5%;
+    }
+
+    #planos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .plano{
+        width: 70%;
+    }
+}
